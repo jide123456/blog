@@ -65,6 +65,11 @@
 	}
 </script>
 
-<style>
-	.admin-table .none {font-size: 1.6em; text-align: center; padding: 2em 0;}
+<style lang="stylus">
+
+	.admin-table
+		.none 
+			font-size 1.6em
+			text-align center
+			padding 2em 0
 </style>

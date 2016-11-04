@@ -28,6 +28,8 @@
 	}
 </script>
 
-<style>
-	.none {text-align: center; padding: 50px 0;}
+<style lang="stylus">
+	.none
+		text-align center
+		padding 50px 0
 </style>

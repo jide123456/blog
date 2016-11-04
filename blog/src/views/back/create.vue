@@ -196,7 +196,12 @@
 
 </script>
 
-<style>
-	.file-img {position:absolute; width: 100%; height: 100%; left: 0; top: 0; opacity: 0;}
-	#editor textarea {width: 100%; height: 300px;}
+<style lang="stylus">
+	.file-img
+		position absolute
+		width 100%
+		height 100%
+		left 0
+		top 0
+		opacity 0
 </style>

@@ -5,7 +5,7 @@
 		section.g-container.f-flex
 			main.g-mn.f-flex-item-1
 				transition(name="fade")
-					ul.m-f-list(v-show="articles.length")
+					ul.article-list(v-show="articles.length")
 						list-item(v-for="item in articles", :item="item")
 				p.none(v-show="!articles.length") 暂无内容
 
@@ -57,22 +57,18 @@
 	}
 </script>
 
-<style>
-	.m-f-list .item {
-		margin-bottom: 35px; 
-		padding-bottom: 35px; 
-		border-bottom: 1px solid #eee;
-	}
-	.m-f-list .info {
-		color: #999; 
-		font-size: 14px;
-	}
-	.m-f-list .digest {
-		line-height: 1.8;
-		text-align: justify;
-	}
-	.m-f-list .none {
-		font-size: 1.6em;
-		text-align: center;
-	}
+<style lang="stylus">
+	.article-list
+		.item
+			margin-bottom 35px
+			padding-bottom 35px
+			border-bottom 1px solid #eee
+
+		.info
+			color #999
+			font-size 14px
+
+		.digest
+			line-height 1.8
+			text-align justify
 </style>
