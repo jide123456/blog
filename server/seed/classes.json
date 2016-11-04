@@ -1,0 +1,17 @@
+[
+	{
+	    "id" : 1,
+	    "name" : "classes1",
+	    "articles" : [1,2]
+	},
+	{
+	    "id" : 2,
+	    "name" : "classes2",
+	    "articles" : [3]
+	},
+	{
+	    "id" : 3,
+	    "name" : "classes3",
+	    "articles" : []
+	}
+]
