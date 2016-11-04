@@ -204,4 +204,9 @@
 		left 0
 		top 0
 		opacity 0
+
+	#editor
+		textarea
+			width 100%
+			height 300px
 </style>
