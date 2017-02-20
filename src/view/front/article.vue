@@ -3,7 +3,7 @@
 		my-head.f-hd-1(
 			:title="article.title"
 			:description="article.digest"
-			:bgUrl = "article.bg.cdnPath"
+			:bgUrl = "bgUrl"
 		)
 
 		my-body
@@ -52,6 +52,13 @@
 			myHead,
 			myFooter,
 			articleOutline
+		},
+		computed: {
+			bgUrl () {
+				return process.env.NODE_ENV === 'production'
+					? this.article.bg.cdnPath
+					: `http://localhost:3000${this.article.bg.localPath}`
+			}
 		},
 		beforeRouteEnter (to, from, next) {
 			getArticle(to.params).then(res => {

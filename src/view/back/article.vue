@@ -143,10 +143,15 @@
 				that.isDisabled = true
 
 				getArticle(that.$route.params).then(res => {
+					if (!res.article.bg) {
+						res.article.bg = {name: null, cdnPath: null, localPath: null, base64:null}
+					}
+
 					res.article.category = res.article.category.id
 					res.article.oldCategory = res.article.category
 					res.article.oldBgName = res.article.bg.name
 					res.article.bg.base64 = null
+
 					Object.assign(that, res.article)
 				})
 			}
