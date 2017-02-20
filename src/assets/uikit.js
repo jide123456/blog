@@ -1,0 +1,6 @@
+import 'uikit/dist/css/uikit.gradient.min.css'
+import 'uikit/dist/css/components/notify.gradient.min.css'
+import 'uikit/dist/css/components/tooltip.gradient.min.css'
+import 'uikit'
+import 'uikit/dist/js/components/notify.min.js'
+import 'uikit/dist/js/components/tooltip.min.js'
